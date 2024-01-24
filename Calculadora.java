@@ -21,7 +21,6 @@ public Calculadora(){
     public void prefix() {
         try {
             ArrayList<String> listPosfix = archivoTxt.leerArchivo();     
-            System.out.println(listPosfix);       
             for (String linea : listPosfix) {
                 if (linea.matches("-?\\d+(\\.\\d+)?")){
                     double num = Double.parseDouble(linea);
@@ -43,7 +42,7 @@ public Calculadora(){
                     }
                 }
             }
-            stack.printStackState();
+            stack.top();
             
         } catch (IOException e) {
             e.printStackTrace();

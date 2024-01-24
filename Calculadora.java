@@ -6,7 +6,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Calculadora {
+public class Calculadora implements iCalculadora{
     private Archivo archivoTxt;
     private CustomStack<Double> stack = new CustomStack<>();
 

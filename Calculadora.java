@@ -15,6 +15,9 @@ public Calculadora(){
 }
 
 
+    /**
+     * Metodo para verificar el operador en el archivo
+     */
     public void prefix() {
         try {
             ArrayList<String> listPosfix = archivoTxt.leerArchivo();     
@@ -49,21 +52,36 @@ public Calculadora(){
     }
 
 
+/**
+ * Metodo para sumar
+ */
 public void sumar(){
     double a = stack.pop();
     double b = stack.pop();
     stack.push(b + a);
 }
+
+/**
+ * Metodo para restar
+ */
 public void restar(){
     double a = stack.pop();
     double b = stack.pop();
     stack.push(b - a);
 }
+
+/**
+ * Metodo para multiplicar
+ */
 public void multiplicar(){
     double a = stack.pop();
     double b = stack.pop();
     stack.push(b * a);
 }
+
+/**
+ * Metodo para dividir
+ */
 public void dividir(){
     double a = stack.pop();
     double b = stack.pop();

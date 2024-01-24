@@ -11,7 +11,7 @@ public class Calculadora {
     private CustomStack<Double> stack = new CustomStack<>();
 
 public Calculadora(){
-    archivoTxt = new Archivo("archivo.txt");
+    archivoTxt = new Archivo("datos.txt");
 }
 
 

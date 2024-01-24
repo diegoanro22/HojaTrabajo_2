@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -14,7 +12,19 @@ public class Archivo {
         archivo = new File(nameArchivo);
     }
 
-    public 
+    public ArrayList<String> leerArchivo() throws IOException {
+        ArrayList<String> listPostfix = new ArrayList<>();
+        FileReader fileReader = new FileReader(archivo);
+        BufferedReader lector = new BufferedReader(fileReader);
+
+        String linea;
+        while ((linea = lector.readLine()) != null){
+            listPostfix.add(linea.toString());
+        }
+        lector.close();
+        return listPostfix;
+
+    }
 
 
 

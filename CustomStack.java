@@ -24,6 +24,15 @@ public T pop(){
     }
 }
 
+public void printStackState() {
+    Node<T> current = firstNode;
+    System.out.print("Stack: ");
+    while (current != null) {
+        System.out.print(current.getValue() + " ");
+        current = current.getNext();
+    }
+    System.out.println();
+}
 
 
 

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
+
 public class Archivo {
     private File archivo;
 
@@ -19,11 +20,17 @@ public class Archivo {
 
         String linea;
         while ((linea = lector.readLine()) != null){
-            listPostfix.add(linea.toString());
+            String[] elementos = linea.split("\\s+");
+            for (String elemento : elementos) {
+                if (elemento.matches("[a-zA-Z]+")){
+                }
+                else{
+                    listPostfix.add(elemento.toString());
+                }
+            }
         }
         lector.close();
         return listPostfix;
-
     }
 
 

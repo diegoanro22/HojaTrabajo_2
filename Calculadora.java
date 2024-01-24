@@ -55,10 +55,19 @@ public void sumar(){
     stack.push(b + a);
 }
 public void restar(){
+    double a = stack.pop();
+    double b = stack.pop();
+    stack.push(b - a);
 }
 public void multiplicar(){
+    double a = stack.pop();
+    double b = stack.pop();
+    stack.push(b * a);
 }
 public void dividir(){
+    double a = stack.pop();
+    double b = stack.pop();
+    stack.push(b / a);
 }
 
 

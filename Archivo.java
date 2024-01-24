@@ -1,3 +1,8 @@
+/*Universidad del Valle de Guatemala 
+ *Genser Andree - 23401
+ *Diego Rosales - 23258
+*/
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -5,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 
-
+//Clase para leer el archivo
 public class Archivo {
     private File archivo;
 

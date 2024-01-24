@@ -1,3 +1,8 @@
+/*Universidad del Valle de Guatemala 
+ *Genser Andree - 23401
+ *Diego Rosales - 23258
+*/
+
 public class Node <T> {
     T value;
     Node<T> next;
